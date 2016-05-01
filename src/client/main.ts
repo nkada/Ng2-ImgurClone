@@ -1,10 +1,10 @@
 import {bootstrap} from 'angular2/platform/browser';
 import {enableProdMode} from 'angular2/core';
 import {environment} from './app/environment';
-import {ImgurCloneApp} from './app/imgur-clone.component';
+import {AppComponent} from './app/app.component';
 
 if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(ImgurCloneApp);
+bootstrap(AppComponent);

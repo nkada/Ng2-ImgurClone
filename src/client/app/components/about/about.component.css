@@ -1,0 +1,13 @@
+import {Component} from 'angular2/core';
+
+@Component({
+  moduleId: __moduleName,
+  selector: 'home',
+  providers: [],
+  templateUrl: 'home.component.html',
+  styleUrls: ['home.component.css'],
+})
+
+export class HomeComponent {
+  title = "ImgurClone";
+}
