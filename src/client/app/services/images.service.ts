@@ -2,6 +2,7 @@ import {Image} from '../image';
 import {IMAGES} from './mock-images'
 import { Injectable } from 'angular2/core';
 import {Http, Response, Headers, HTTP_BINDINGS} from 'angular2/http';
+import {PrivateConfig} from '../private';
 import 'rxjs/Rx';
 
 export interface IImagesService {
@@ -32,7 +33,7 @@ export class ImagesService {
         this._http = http;
     }
     headers = new Headers({
-      "Authorization": "Client-ID ee3fc508a7f3b01"
+      "Authorization": `Client-ID ${PrivateConfig.api.clientId}`
     })
     //Will be XHR
     getCategories() {
