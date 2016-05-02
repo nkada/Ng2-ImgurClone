@@ -1,0 +1,1 @@
+System.register([],function(exports_1,context_1){"use strict";var __moduleName=context_1&&context_1.id;var PrivateConfig;return{setters:[],execute:function(){exports_1("PrivateConfig",PrivateConfig={api:{clientId:"ee3fc508a7f3b01"}})}}});

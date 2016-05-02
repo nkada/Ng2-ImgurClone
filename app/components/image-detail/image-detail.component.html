@@ -1,0 +1,17 @@
+<a (click)="goBack()"><i class="fa fa-angle-left fa-lg fa-fw"></i>Back</a>
+<div *ngIf="image">
+  <div class="card col-lg-6 col-lg-offset-3">
+    <video *ngIf="image.type==='image/gif'" autoplay>
+      <source [src]="image.mp4">
+    </video>
+
+      <img [src]="image.link" *ngIf="image.type!=='image/gif'" class="card-image"/>
+
+    <div class="card-block">
+      <h4 class="card-title">{{image.name}}</h4>
+      <p class="card-text">{{image.description}}</p>
+    </div>
+  </div>
+
+
+</div>

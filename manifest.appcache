@@ -1,0 +1,113 @@
+CACHE MANIFEST
+# sw.bundle: ng-cli
+# sw.version: ebaa0a76074fe45d115bb7e0ea30cf1619f040eb
+# sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+\app\app.component.css
+# sw.file.hash: 28f78f380ee6a03bc113e2a640f2a7c5a82d3849
+\app\app.component.html
+# sw.file.hash: 8b9f513e44d1ea8325a13faffc188f8c83c2b48a
+\app\app.component.js
+# sw.file.hash: 6f80df801baaaa62bddc422a2c68714bd2cabbcf
+\app\app.component.js.map
+# sw.file.hash: 4034272a506e6e15fe69f687a39e0d448d2c2fa0
+\app\category.js
+# sw.file.hash: 0060929532b5b79bdc22072d0714852fb9a66109
+\app\category.js.map
+# sw.file.hash: ca18845efda0816074cb399aa32aa9ea39da1fe2
+\app\components\about\about.component.css
+# sw.file.hash: 0ef05b2a3156e1be41939ba217608a9958af8892
+\app\components\about\about.component.html
+# sw.file.hash: 46156532a2e76c4ede8b2845d12ff7f15ad448d6
+\app\components\about\about.component.js
+# sw.file.hash: 9db82d8134506649078e5adf70e1a4a31e7d35e9
+\app\components\about\about.component.js.map
+# sw.file.hash: 70d813e86a0022b182b03d959224cedcd3e71c66
+\app\components\categories\categories.component.css
+# sw.file.hash: fddb4833c30791894daed160d0802c63fdf246be
+\app\components\categories\categories.component.html
+# sw.file.hash: 6fc41f824b2652f7150d9f4234156af63dd472d7
+\app\components\categories\categories.component.js
+# sw.file.hash: fde7f83e37f4cf85684670cf3f707a12b4538a83
+\app\components\categories\categories.component.js.map
+# sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+\app\components\home\home.component.css
+# sw.file.hash: 7731c59fe4a4c46482ad208e5e1428bfeb83b458
+\app\components\home\home.component.html
+# sw.file.hash: c53b95228c9cb6e44917528e22a09bdb20bb39a1
+\app\components\home\home.component.js
+# sw.file.hash: b59fac8cb8be18ec2e756b7309085d17458b7c68
+\app\components\home\home.component.js.map
+# sw.file.hash: 319948be3e771e2acc40f10ba262b10bd1f236d5
+\app\components\image-detail\image-detail.component.css
+# sw.file.hash: c91ebe683b8f7a99a545375dae7b5a07c029e68e
+\app\components\image-detail\image-detail.component.html
+# sw.file.hash: a9955ad4865a58a2a10465093a95c8186202fb0e
+\app\components\image-detail\image-detail.component.js
+# sw.file.hash: 0c0fcb5ae842ae431587f46d008c9ad3fe2358c0
+\app\components\image-detail\image-detail.component.js.map
+# sw.file.hash: 5354fac78ed78274bbe7d5b1b0736fa8a1dfdef8
+\app\components\images\images.component.css
+# sw.file.hash: 84c514fb9987324b892a352fbfea7dc81079fa7d
+\app\components\images\images.component.html
+# sw.file.hash: 4f822f4c8242c913be77ab95d509be7f0f7ff3d4
+\app\components\images\images.component.js
+# sw.file.hash: a25445c1f5c68dfd154b7cefc0328f9b724bbd4c
+\app\components\images\images.component.js.map
+# sw.file.hash: d09ddb772e790ad7db90825cf950871facd27a7f
+\app\environment.js
+# sw.file.hash: afe387357f80e7340e612b59b368292854653569
+\app\environment.js.map
+# sw.file.hash: 0fe407fd7e1429e0aaa8301fdda36414e5ecd563
+\app\image.js
+# sw.file.hash: a168050e959205aafe05933fd8ccd985402a786c
+\app\image.js.map
+# sw.file.hash: 2457031f649a08aa385441636fbcf3d5fa47ea9d
+\app\private.js
+# sw.file.hash: 6d8176f011f24976023ebcef735f5f653295c567
+\app\private.js.map
+# sw.file.hash: 07f4d7c63caeb722da4ef3fa35bad3847cb283a7
+\app\services\images.service.js
+# sw.file.hash: e99e4cc0fb2eddd0883235e1cd16de6a0cc684aa
+\app\services\images.service.js.map
+# sw.file.hash: 2fd1de8e1d597efd7f6aaec895a8959520bb632c
+\app\services\mock-images.js
+# sw.file.hash: 1bd8562562097f0b28d1701e170b9cae94656761
+\app\services\mock-images.js.map
+# sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+\app\shared\index.js
+# sw.file.hash: 068493a1b2b888f18c220f8b75560b6288017aea
+\app\shared\index.js.map
+# sw.file.hash: 019ca043628afb731ec17be83537c375d24577b6
+\assets\main.css
+# sw.file.hash: 84161b857f5c547e3699ddfbffc6d8d737542e01
+\favicon.ico
+# sw.file.hash: 79efe30bad1c632f0181debce23a2a63d590a67e
+\index.html
+# sw.file.hash: 9012b63c50f9fcd4a65b4cd729e14a0476ba5439
+\main.js
+# sw.file.hash: ec2c33cd39401fe0ccd1a2d791c830393b27a4cd
+\main.js.map
+# sw.file.hash: 82e4dcb9f1c86a3ce32268e7cfa61625163e0906
+\system-config.js
+# sw.file.hash: 228a9ccde05996e3172dad0c3a0291592573b97f
+\system-config.js.map
+# sw.file.hash: 04f0ade077db205fe1b6495d0fba970a95307589
+\tsconfig.json
+# sw.file.hash: e5276ead9557ffe3cee53731a6025cdafd234f1b
+\vendor\angular2\bundles\angular2-polyfills.js
+# sw.file.hash: a0ce24ebed89f4d34e47e2a235ba5a2cdb7417da
+\vendor\angular2\bundles\angular2.dev.js
+# sw.file.hash: 63809ef9cd25fb043aa85d78277daae238716910
+\vendor\angular2\bundles\http.dev.js
+# sw.file.hash: 0a999c93acd7102b5d990b384d1a3cfcb0b301e8
+\vendor\angular2\bundles\router.dev.js
+# sw.file.hash: 64b77bee26ce7c8298ed454d73776c7602d41694
+\vendor\angular2\bundles\upgrade.dev.js
+# sw.file.hash: 2adbdc3a7b6d85ac53b76b52234f28b16c88c7b2
+\vendor\es6-shim\es6-shim.js
+# sw.file.hash: 736fe8675af5630486329adf5efe12ec7be449b1
+\vendor\rxjs\bundles\Rx.js
+# sw.file.hash: 064ab212cfd9e125474ae3bbb600c366b31e79cb
+\vendor\systemjs\dist\system-polyfills.js
+# sw.file.hash: 83128f4a4209eb7b16ad0bb729fda6939bc450fc
+\vendor\systemjs\dist\system.src.js

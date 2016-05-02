@@ -1,0 +1,1 @@
+{"version":3,"file":"image.js","sourceRoot":"","sources":["image.ts"],"names":[],"mappings":";;;;;;;YAAA;gBAAA;gBAKA,CAAC;gBAAD,YAAC;YAAD,CAAC,AALD,IAKC;YALD,yBAKC,CAAA","sourcesContent":["export class Image {\r\n  id: string;\r\n  title: string;\r\n  description: string;\r\n  link: string;\r\n}\r\n"]}

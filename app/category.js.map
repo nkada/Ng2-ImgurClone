@@ -1,0 +1,1 @@
+{"version":3,"file":"category.js","sourceRoot":"","sources":["category.ts"],"names":[],"mappings":";;;;;;;YACA;gBAAA;gBAKA,CAAC;gBAAD,eAAC;YAAD,CAAC,AALD,IAKC;YALD,+BAKC,CAAA","sourcesContent":["import {Image} from './image';\r\nexport class Category{\r\n  id: number;\r\n  name: string;\r\n  description: string;\r\n  topPost: Image;\r\n}\r\n"]}

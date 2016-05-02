@@ -1,0 +1,1 @@
+{"version":3,"file":"private.js","sourceRoot":"","sources":["private.ts"],"names":[],"mappings":";;;QAAa,aAAa;;;;YAAb,2BAAA,aAAa,GAAG;gBAC3B,GAAG,EAAE;oBACH,QAAQ,EAAE,iBAAiB;iBAC5B;aACF,CAAA,CAAA","sourcesContent":["export const PrivateConfig = {\r\n  api: {\r\n    clientId: \"ee3fc508a7f3b01\"\r\n  }\r\n}\r\n"]}
