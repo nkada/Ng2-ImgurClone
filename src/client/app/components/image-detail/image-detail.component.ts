@@ -29,9 +29,11 @@ export class ImageDetailComponent implements OnInit {
         let id = this._routeParams.get("id");
         console.log(id);
         this._imagesService.getImage(String(id))
-        .then((res) => {
-          this.image = res.data;
-        })
+            .map((res: Response) => res.json())
+            .subscribe((result) => {
+              console.log(result.data);
+                this.image = result.data;
+            });
     }
 
     goBack(){
