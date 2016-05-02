@@ -49,7 +49,7 @@ export class ImagesService {
 
     _buildRequest(endpoint: string, id?: string){
 
-      let url = `${this.baseUrl}${endpoint}`
+      let url = `${this.baseUrl}${endpoint}`;
       if(id){
         url = `${url}/${id}`;
       }
