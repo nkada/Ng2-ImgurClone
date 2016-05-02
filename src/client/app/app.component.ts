@@ -2,7 +2,8 @@ import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 import {HomeComponent} from './components/home/home.component';
 import {AboutComponent} from './components/about/about.component';
-import {CategoryDetailComponent} from './components/category-detail/category-detail.component';
+import {ImagesComponent} from './components/images/images.component';
+import {ImageDetailComponent} from './components/image-detail/image-detail.component';
 
 @Component({
   moduleId: __moduleName,
@@ -28,8 +29,13 @@ import {CategoryDetailComponent} from './components/category-detail/category-det
   },
   {
     path: "/category/:id",
-    name: "CategoryDetail",
-    component: CategoryDetailComponent
+    name: "Images",
+    component: ImagesComponent
+  },
+  {
+    path: "/image/:id",
+    name: "ImageDetail",
+    component: ImageDetailComponent
   }
 ])
 export class AppComponent {

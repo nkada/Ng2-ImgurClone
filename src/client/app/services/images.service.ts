@@ -34,16 +34,15 @@ export class ImagesService {
     }
     headers = new Headers({
       "Authorization": `Client-ID ${PrivateConfig.api.clientId}`
-    })
-    //Will be XHR
+    });
     getCategories() {
       return this._http.get("https://api.imgur.com/3/topics/defaults", { headers: this.headers}).share();
     }
+    getImagesByCategory(id: number){
+      return this._http.get("https://api.imgur.com/3/topics/" + id, {headers: this.headers}).share();
+    }
 
-    //Will be XHR
     getImage(id: string) {
-        return Promise.resolve(IMAGES).then(
-            images => images.filter(image => image.id === id)[0]
-        )
+      return this._http.get(" https://api.imgur.com/3/image/" + id, {headers: this.headers}).share();
     }
 }

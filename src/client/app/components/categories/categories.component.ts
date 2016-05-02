@@ -31,8 +31,8 @@ export class CategoriesComponent implements OnInit {
     });
   }
 
-  gotoCategoryDetail(category: Category){
-    let link = ['CategoryDetail', {id: category.id}]
+  gottoImages(category: Category){
+    let link = ['Images', {id: category.id}]
     this._router.navigate(link);
   }
 }
