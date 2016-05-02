@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 import {HomeComponent} from './components/home/home.component';
 import {AboutComponent} from './components/about/about.component';
-import {ImagesComponent} from './components/images/images.component';
+import {CategoryImagesComponent} from './components/category-images/category-images.component';
 import {ImageDetailComponent} from './components/image-detail/image-detail.component';
 
 @Component({
@@ -30,7 +30,7 @@ import {ImageDetailComponent} from './components/image-detail/image-detail.compo
   {
     path: "/category/:id",
     name: "Images",
-    component: ImagesComponent
+    component: CategoryImagesComponent
   },
   {
     path: "/image/:id",

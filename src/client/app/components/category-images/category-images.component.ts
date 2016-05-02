@@ -6,17 +6,19 @@ import 'rxjs/Rx';
 import {Image} from '../../image';
 import {Category} from '../../category';
 import { ImagesService } from '../../services/images.service';
+import {ImageTileComponent} from '../image-tile/image-tile.component';
 
 
 @Component({
     moduleId: __moduleName,
     selector: 'images',
+    directives: [ImageTileComponent],
     providers: [provide(ImagesService, { useClass: ImagesService }), HTTP_PROVIDERS],
-    templateUrl: 'images.component.html',
-    styleUrls: ['images.component.css'],
+    templateUrl: 'category-images.component.html',
+    styleUrls: ['category-images.component.css'],
 })
 
-export class ImagesComponent implements OnInit {
+export class CategoryImagesComponent implements OnInit {
     images: Image[] = [];
     topic: string;
     constructor(
@@ -32,15 +34,8 @@ export class ImagesComponent implements OnInit {
             .subscribe((result) => {
                 this.images = result.data.filter((image) => {
                   this.topic = image.topic;
-                  console.log(image);
                     return !image.is_album;
                 })
             });
-    }
-
-
-    goToImageDetail(image: Image) {
-        let link = ['ImageDetail', { id: image.id }]
-        this._router.navigate(link);
     }
 }
