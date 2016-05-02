@@ -29,6 +29,7 @@ export class MockImagesService {
 export class ImagesService {
     _http: Http
     _categories;
+    baseUrl: string = "https://api.imgur.com/3/";
     constructor(http: Http) {
         this._http = http;
     }
@@ -36,13 +37,24 @@ export class ImagesService {
       "Authorization": `Client-ID ${PrivateConfig.api.clientId}`
     });
     getCategories() {
-      return this._http.get("https://api.imgur.com/3/topics/defaults", { headers: this.headers}).share();
+      return this._buildRequest("topics/defaults")
     }
-    getImagesByCategory(id: number){
-      return this._http.get("https://api.imgur.com/3/topics/" + id, {headers: this.headers}).share();
+    getImagesByCategory(id: string){
+      return this._buildRequest("topics", id);
     }
 
     getImage(id: string) {
-      return this._http.get(" https://api.imgur.com/3/image/" + id, {headers: this.headers}).share();
+      return this._buildRequest("image", id);
+    }
+
+    _buildRequest(endpoint: string, id?: string){
+
+      let url = `${this.baseUrl}${endpoint}`
+      if(id){
+        url = `${url}/${id}`;
+      }
+      return this._http.get(url, {headers: this.headers})
+      .toPromise()
+      .then((response) => response.json())
     }
 }
