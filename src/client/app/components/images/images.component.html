@@ -1,0 +1,20 @@
+<h3>{{topic}}</h3>
+<div class="card-columns">
+    <div class="card" *ngFor="#image of images" (click)="goToImageDetail(image)">
+        <img [src]="image.link" class="card-image" alt="Card image">
+        <div class="card-block" *ngIf="image.name">
+            <h4 class="card-title">{{image.name}}</h4>
+        </div>
+        <span class="row image-info">
+          <span class="col-md-4">
+            <i class="fa fa-angle-up fa-lg fa-fw" aria-hidden="true"></i>{{image.ups}}
+          </span>
+          <span class="col-md-4">
+            <i class="fa fa-angle-down fa-lg fa-fw" aria-hidden="true"></i>{{image.downs}}
+          </span>
+          <span class="col-md-4">
+            <i class="fa fa-eye fa-lg fa-fw" aria-hidden="true"></i>{{image.views}}
+          </span>
+        </span>
+    </div>
+</div>
