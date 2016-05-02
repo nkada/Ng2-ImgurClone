@@ -28,10 +28,9 @@ export class CategoryImagesComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        let id = +this._routeParams.get("id");
+        let id = this._routeParams.get("id");
         this._imagesService.getImagesByCategory(id)
-            .map((res: Response) => res.json())
-            .subscribe((result) => {
+            .then((result) => {
                 this.images = result.data.filter((image) => {
                   this.topic = image.topic;
                     return !image.is_album;

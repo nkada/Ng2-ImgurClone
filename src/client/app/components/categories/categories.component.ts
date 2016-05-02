@@ -24,8 +24,7 @@ export class CategoriesComponent implements OnInit {
 
   ngOnInit(){
     this._imagesService.getCategories()
-    .map((res:Response) => res.json())
-    .subscribe((result)=>{
+    .then((result)=>{
       console.log(result.data);
       this.categories = result.data;
     });
