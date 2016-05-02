@@ -19,7 +19,6 @@ export class ImageTileComponent {
     constructor(
         private _router: Router
     ) {
-        console.log(this.image);
     }
 
     goToImageDetail(image: Image) {

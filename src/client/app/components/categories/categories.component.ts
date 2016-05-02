@@ -25,7 +25,6 @@ export class CategoriesComponent implements OnInit {
   ngOnInit(){
     this._imagesService.getCategories()
     .then((result)=>{
-      console.log(result.data);
       this.categories = result.data;
     });
   }
