@@ -26,6 +26,3 @@ testem.log
 
 #System Files
 .DS_Store
-
-#Private - API Keys etc
-private.ts
