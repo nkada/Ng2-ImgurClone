@@ -28,14 +28,12 @@ export class ImagesComponent implements OnInit {
     ngOnInit() {
         let id = +this._routeParams.get("id");
         this._imagesService.getImagesByCategory(id)
-            .map((res: Response) => res.json())
-            .subscribe((result) => {
-                this.images = result.data.filter((image) => {
-                  this.topic = image.topic;
-                  console.log(image);
-                    return !image.is_album;
-                })
-            });
+            .then((res) =>{
+              this.images = res.data.filter((image) => {
+                this.topic = image.topic;
+                return !image.is_album;
+              })
+            })
     }
 
 
