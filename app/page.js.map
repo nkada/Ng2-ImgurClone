@@ -1,0 +1,1 @@
+{"version":3,"file":"page.js","sourceRoot":"","sources":["page.ts"],"names":[],"mappings":";;;;;;;YAAA;gBACE,cAAmB,MAAc,EAAS,QAAiB;oBAAxC,WAAM,GAAN,MAAM,CAAQ;oBAAS,aAAQ,GAAR,QAAQ,CAAS;gBAE3D,CAAC;gBACH,WAAC;YAAD,CAAC,AAJD,IAIC;YAJD,uBAIC,CAAA","sourcesContent":["export class Page {\r\n  constructor(public number: number, public isActive: boolean){\r\n    \r\n  }\r\n}\r\n"]}

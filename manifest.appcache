@@ -1,9 +1,9 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: 07c79bc6714261f4d5ae58760cc41144b158e6bd
+# sw.version: 6e2908b5e02518e0f58206acdc4e9f96f14b2c70
 # sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
 \app\app.component.css
-# sw.file.hash: 39c6948c9b2a997c7743c923ee230307066f5d11
+# sw.file.hash: e6d0e3666bfcccb0b1ee72226c73973308a0b4e1
 \app\app.component.html
 # sw.file.hash: 95e4303ca10aa5f7f7271dd2eb28e7a691929cbc
 \app\app.component.js
@@ -31,11 +31,11 @@ CACHE MANIFEST
 \app\components\categories\categories.component.js.map
 # sw.file.hash: 5354fac78ed78274bbe7d5b1b0736fa8a1dfdef8
 \app\components\category-images\category-images.component.css
-# sw.file.hash: 5a9ab2bd84bdccf51a0bbc81719996243b9dc963
+# sw.file.hash: 401572f711ecf1386c51bd1948a484a4050e03cf
 \app\components\category-images\category-images.component.html
-# sw.file.hash: 63ac98e7800559e1b9d604dd7cb8684a0c9cb241
+# sw.file.hash: 342729c8567fc23de3f612474655f3a9d93aba1a
 \app\components\category-images\category-images.component.js
-# sw.file.hash: 9c06c4b073d32e921bbf917830370700eefbb408
+# sw.file.hash: 8b156c0ef264bb54b3b6d7135a0ecbf8fb236b13
 \app\components\category-images\category-images.component.js.map
 # sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
 \app\components\home\home.component.css
@@ -55,12 +55,28 @@ CACHE MANIFEST
 \app\components\image-detail\image-detail.component.js.map
 # sw.file.hash: 5ac62ce3028ff76887fd10eacbd08e686b76aefb
 \app\components\image-tile\image-tile.component.css
-# sw.file.hash: 18f8fed1702069c11e1789f2b23438d41403e8ad
+# sw.file.hash: 03af739fd5d9dac6b549339255a0afb816e94c83
 \app\components\image-tile\image-tile.component.html
-# sw.file.hash: cd03c4bbc809d6ef1212af0c56e103d4e3c7b5bb
+# sw.file.hash: 0d3e7c242d82ed9adde8ec11338eff145a94c698
 \app\components\image-tile\image-tile.component.js
-# sw.file.hash: 64bc5ae33a0d90db7aed9802d26c2a474006d671
+# sw.file.hash: 7af21aa9155e421624042ca1f774fcf0ba165590
 \app\components\image-tile\image-tile.component.js.map
+# sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+\app\components\pagination\pagination.component.css
+# sw.file.hash: 5495c8b3c41955db34a6f88cec363f3a6e1bb3e1
+\app\components\pagination\pagination.component.html
+# sw.file.hash: ac6b16ff4ca7255a103de8d772a03419fdaa36bd
+\app\components\pagination\pagination.component.js
+# sw.file.hash: 53f26321a474f309813d443c60f09ebc2cff7d3a
+\app\components\pagination\pagination.component.js.map
+# sw.file.hash: 8f6eb269dffaae03ee758ae393b72e23237b5a52
+\app\components\spinner\spinner.component.css
+# sw.file.hash: effd25f57844103d382378d1f958bc2258bfb21b
+\app\components\spinner\spinner.component.html
+# sw.file.hash: ccb6fe7a19dfdcabec65c7214481cb4bf5a300bb
+\app\components\spinner\spinner.component.js
+# sw.file.hash: 4f2c1a3f0bf9163e641c4a15b3124827d91cc5c2
+\app\components\spinner\spinner.component.js.map
 # sw.file.hash: d09ddb772e790ad7db90825cf950871facd27a7f
 \app\environment.js
 # sw.file.hash: afe387357f80e7340e612b59b368292854653569
@@ -69,13 +85,17 @@ CACHE MANIFEST
 \app\image.js
 # sw.file.hash: a168050e959205aafe05933fd8ccd985402a786c
 \app\image.js.map
+# sw.file.hash: f21e682755bab521b67c5af564613dd81ddcecf4
+\app\page.js
+# sw.file.hash: 35f7ccf3a3607bdcec0d86362687fbc84c6fd3e3
+\app\page.js.map
 # sw.file.hash: 2457031f649a08aa385441636fbcf3d5fa47ea9d
 \app\private.js
 # sw.file.hash: 6d8176f011f24976023ebcef735f5f653295c567
 \app\private.js.map
-# sw.file.hash: a3fca685595d130f95df0b079f6f11cc0675f0d5
+# sw.file.hash: b5bde4250a1d3c849e0a11c5244c255e49f109d4
 \app\services\images.service.js
-# sw.file.hash: c6631ef94d3824a3d3663f19aa0829c51d6f66e3
+# sw.file.hash: 2393377a81f391acf58ebe33eb95e166f4d456ce
 \app\services\images.service.js.map
 # sw.file.hash: 2fd1de8e1d597efd7f6aaec895a8959520bb632c
 \app\services\mock-images.js
