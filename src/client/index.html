@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>ImgurClone</title>
-  <base href="/">
-  {{content-for 'head'}}
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link href="assets/main.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet" />
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
 
-  <!-- Service worker support is disabled by default.
+<head>
+    <meta charset="utf-8">
+    <title>ImgurClone</title>
+    <base href="/"> {{content-for 'head'}}
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="assets/main.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Service worker support is disabled by default.
        Install the worker script and uncomment to enable.
        Only enable service workers in production.
   <script type="text/javascript">
@@ -22,27 +22,48 @@
   </script>
   -->
 </head>
+
 <body>
-  <app>Loading...</app>
+    <app>Loading...</app>
 
-  <script src="vendor/es6-shim/es6-shim.js"></script>
-  <script src="vendor/systemjs/dist/system-polyfills.js"></script>
-  <script src="vendor/angular2/bundles/angular2-polyfills.js"></script>
-  <script src="vendor/systemjs/dist/system.src.js"></script>
-  <script src="vendor/rxjs/bundles/Rx.js"></script>
+    <script src="vendor/es6-shim/es6-shim.js"></script>
+    <script src="vendor/systemjs/dist/system-polyfills.js"></script>
+    <script src="vendor/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="vendor/systemjs/dist/system.src.js"></script>
+    <script src="vendor/rxjs/bundles/Rx.js"></script>
 
-  <script src="vendor/angular2/bundles/angular2.dev.js"></script>
-  <script src="vendor/angular2/bundles/http.dev.js"></script>
-  <script src="vendor/angular2/bundles/router.dev.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="vendor/angular2/bundles/angular2.dev.js"></script>
+    <script src="vendor/angular2/bundles/http.dev.js"></script>
+    <script src="vendor/angular2/bundles/router.dev.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-  <script>
-    System.import('system-config.js').then(function(systemConfig) {
-      System.config(systemConfig.config);
-    }).then(function () {
-      System.import('main.js')
-    }).catch(console.error.bind(console));
-  </script>
+    <script>
+        System.import('system-config.js').then(function(systemConfig) {
+            System.config(systemConfig.config);
+        }).then(function() {
+            System.import('main.js')
+        }).catch(console.error.bind(console));
+        function setMaxHeight() {
+            var maxHeight = 0;
+            //Get max Height
+            $(".equal [class*='col-']").each(function(i, col) {
+                var colHeight = $(col).height();
+                console.log(colHeight);
+                if (colHeight > maxHeight) {
+                    maxHeight = colHeight;
+                }
+            });
+            //set max height
+            $(".equal [class*='col-']").each(function(i, col) {
+                $(col).height(maxHeight);
+            });
+        }
+
+        setTimeout(function() {
+            setMaxHeight();
+        }, 1000)
+    </script>
 </body>
+
 </html>
