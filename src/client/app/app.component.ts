@@ -46,10 +46,13 @@ title = "ImgurClone";
 categories: Category[] = [];
 constructor(private _imagesService: ImagesService, private _router: Router) { }
     ngOnInit() {
-        this._imagesService.getCategories()
-            .then((res) => {
-                this.categories = res.data;
-            })
+
+      this._imagesService.getCategories()
+      .subscribe(res=> {
+        console.log(res);
+        this.categories = res.data
+      });
+      
     }
 
     gottoImages(category: Category){

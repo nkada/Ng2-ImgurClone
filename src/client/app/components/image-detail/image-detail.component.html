@@ -1,14 +1,24 @@
 <a (click)="goBack()"><i class="fa fa-angle-left fa-lg fa-fw"></i>Back</a>
 <div *ngIf="image">
   <div class="card col-lg-6 col-lg-offset-3">
-    <video *ngIf="image.type==='image/gif'" autoplay>
+    <div class="card-block">
+      <h4 class="card-title">{{image.name}}</h4>
+    </div>
+
+    <video *ngIf="image.type==='image/gif'" autoplay loop class="full-width">
       <source [src]="image.mp4">
     </video>
 
       <img [src]="image.link" *ngIf="image.type!=='image/gif'" class="card-image"/>
 
     <div class="card-block">
-      <h4 class="card-title">{{image.name}}</h4>
+    <!--  <span class="image-info">
+          <i class="fa fa-angle-up fa-lg fa-fw" aria-hidden="true"></i>{{image.ups}}
+      </span>
+      <span class="image-info">
+          <i class="fa fa-angle-down fa-lg fa-fw" aria-hidden="true"></i>{{image.downs}}
+      </span>
+    -->
       <p class="card-text">{{image.description}}</p>
     </div>
   </div>
