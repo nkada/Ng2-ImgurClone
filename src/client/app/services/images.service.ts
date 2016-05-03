@@ -39,14 +39,19 @@ export class ImagesService {
     getCategories() {
         return this._buildRequest("topics/defaults")
     }
-    getImagesByCategory(id: string){
-      return this._buildRequest("topics", id);
+    getImagesByCategory(id: string, options: any){
+    if(!options.sort){
+      options.sort = 'viral'
+    }
+    if(!options.page){
+    options.page = 1;
+    }
+      return this._buildRequest(`topics/${id}/${options.sort}/${options.page}`);
     }
 
-
-getImage(id: string) {
-  return this._buildRequest("image", id);
-}
+    getImage(id: string) {
+      return this._buildRequest(`image/${id}`);
+    }
     _buildRequest(endpoint: string, id?: string) {
 
         let url = `${this.baseUrl}${endpoint}`;

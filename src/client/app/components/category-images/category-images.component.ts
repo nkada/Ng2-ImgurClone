@@ -22,6 +22,7 @@ export class CategoryImagesComponent implements OnInit {
     images: Image[] = [];
     public isRequesting: boolean;
     topic: string;
+    public page: number = 1;
     constructor(
         private _imagesService: ImagesService
         , private _router: Router
@@ -31,7 +32,7 @@ export class CategoryImagesComponent implements OnInit {
     ngOnInit() {
         let id = this._routeParams.get("id");
         this.isRequesting = true;
-        this._imagesService.getImagesByCategory(id)
+        this._imagesService.getImagesByCategory(id, {page: this.page})
             .then((result) => {
                 this.images = result.data.filter((image) => {
                   this.topic = image.topic;
