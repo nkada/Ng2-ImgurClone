@@ -34,7 +34,6 @@ export class ImageDetailComponent implements OnInit {
     }
 
     goBack(){
-      console.log(window.history);
        window.history.back();
     }
 }
