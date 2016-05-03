@@ -24,9 +24,13 @@ export class CategoriesComponent implements OnInit {
 
   ngOnInit(){
     this._imagesService.getCategories()
-    .then((result)=>{
-      this.categories = result.data;
+    .subscribe(res=> {
+      console.log(res);
+      this.categories = res.data
     });
+  /*  .then((result)=>{
+      this.categories = result.data;
+    });*/
   }
   gottoImages(category: Category){
     let link = ['Images', {id: category.id}]

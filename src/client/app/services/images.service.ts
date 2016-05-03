@@ -29,6 +29,7 @@ export class MockImagesService {
 export class ImagesService {
     _http: Http
     _categories;
+    _imagesByCategory;
     baseUrl: string = "https://api.imgur.com/3/";
     constructor(http: Http) {
         this._http = http;
@@ -37,20 +38,34 @@ export class ImagesService {
         "Authorization": `Client-ID ${PrivateConfig.api.clientId}`
     })
     getCategories() {
-        return this._buildRequest("topics/defaults")
+        if (!this._categories) {
+            this._categories = this._buildRequest("topics/defaults")
+                .map((res: Response) => res.json())
+                .publishReplay(1)
+                .refCount();
+        }
+        return this._categories;
+
     }
-    getImagesByCategory(id: string, options: any){
-    if(!options.sort){
-      options.sort = 'viral'
-    }
-    if(!options.page){
-    options.page = 1;
-    }
-      return this._buildRequest(`topics/${id}/${options.sort}/${options.page}`);
+    getImagesByCategory(id: string, options: any) {
+        if (!options.sort) {
+            options.sort = 'viral'
+        }
+        if (!options.page) {
+            options.page = 1;
+        }
+
+        this._imagesByCategory = this._buildRequest(`topics/${id}/${options.sort}/${options.page}`)
+            .map((res: Response) => res.json())
+            .publishReplay(20)
+            .refCount();
+
+        return this._imagesByCategory;
     }
 
     getImage(id: string) {
-      return this._buildRequest(`image/${id}`);
+        return this._buildRequest(`image/${id}`)
+        .map((res: Response) => res.json());
     }
     _buildRequest(endpoint: string, id?: string) {
 
@@ -59,7 +74,9 @@ export class ImagesService {
             url = `${url}/${id}`;
         }
         return this._http.get(url, { headers: this.headers })
-            .toPromise()
-            .then((response) => response.json())
+    }
+
+    clearCategories() {
+        this._categories = null;
     }
 }

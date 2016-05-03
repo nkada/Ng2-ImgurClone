@@ -28,9 +28,10 @@ export class ImageDetailComponent implements OnInit {
     ngOnInit() {
         let id = this._routeParams.get("id");
         this._imagesService.getImage(String(id))
-            .then((result) => {
-                this.image = result.data;
-            });
+        .subscribe(res=> {
+          this.image = res.data
+        });
+
     }
 
     goBack(){

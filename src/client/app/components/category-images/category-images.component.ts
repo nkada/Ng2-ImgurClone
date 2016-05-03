@@ -41,22 +41,22 @@ export class CategoryImagesComponent  {
     }
 
   onPageChange(page:boolean){
-    console.log("Changed");
+    console.log(this._paginationComponent.currentPage.number);
     this.fetchImages(this._paginationComponent.currentPage.number);
   }
     fetchImages(pageNumber: number) {
         this.isRequesting = true;
         let id = this._routeParams.get("id");
 
-        this._imagesService.getImagesByCategory(id, { page: pageNumber })
-            .then((result) => {
-                this.images = result.data.filter((image) => {
-                    this.topic = image.topic;
-                    return !image.is_album;
-                })
+          this._imagesService.getImagesByCategory(id, { page: pageNumber })
+          .subscribe(res=> {
+            this.images = res.data.filter((image) => {
+                this.topic = image.topic;
+                return !image.is_album;
+            })
+              this.stopRefreshing();
+          });
 
-                this.stopRefreshing();
-            });
     }
 
     private stopRefreshing() {
