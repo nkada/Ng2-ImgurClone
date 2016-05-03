@@ -1,0 +1,63 @@
+.post .point-info {
+    bottom: -70px;
+}
+.post{
+  float:left;
+  background-color: #181817;
+
+  display: inline-block;
+  margin: 4px 2px;
+  position: relative;
+      overflow: hidden;
+}
+
+.post, .post img {
+    width: 180px;
+    height: 180px;
+    line-height: 0;
+}
+.post .point-info {
+    background: #000;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    color: #FFF;
+    height: 70px;
+}
+.post .point-info {
+    width: 100%;
+}
+
+.post .point-info>div {
+height: 75px;
+}
+
+.post:hover .point-info {
+    bottom: -35px;
+}
+
+.transition {
+    transition: all .07s ease-in-out;
+    -webkit-transition: all .07s ease-in-out;
+}
+
+.relative {
+    position: relative;
+}
+
+.post .pa-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+}
+
+.post .point-info .arrows, .post .point-info .point-info-points {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post .arrows .arrow {
+    padding: 7px;
+    margin-top:5px;
+    display: block;
+    float:left;
+}

@@ -1,0 +1,22 @@
+
+    <div  class="post">
+    <a class="image-list-link" (click)="goToImageDetail(image)" data-page="0">
+
+        <img [src]="image.link">
+            <div class="point-info gradient-transparent-black transition">
+                <div class="relative">
+                        <div class="arrows">
+                            <div title="ups" class="arrow">
+                                <i class="fa fa-angle-up fa-lg fa-fw" aria-hidden="true"></i>{{image.ups}}
+                            </div>
+                            <div title="down" class="arrow">
+                                <i class="fa fa-angle-down fa-lg fa-fw" aria-hidden="true"></i>{{image.downs}}
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                </div>
+            </div>
+
+    </a>
+
+</div>

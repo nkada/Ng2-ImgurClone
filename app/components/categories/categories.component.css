@@ -4,3 +4,8 @@
 .image-container img{
   width: 100%;
 }
+
+
+.thumbnail:hover{
+  background: #eee;
+}

@@ -1,13 +1,13 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: c271e4ffdecfbe759666d7f8f845564e601668df
+# sw.version: b690445a75dc96fcb58c4495ca393c7757fb6635
 # sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
 \app\app.component.css
-# sw.file.hash: 28f78f380ee6a03bc113e2a640f2a7c5a82d3849
+# sw.file.hash: 39c6948c9b2a997c7743c923ee230307066f5d11
 \app\app.component.html
-# sw.file.hash: 8b9f513e44d1ea8325a13faffc188f8c83c2b48a
+# sw.file.hash: 95e4303ca10aa5f7f7271dd2eb28e7a691929cbc
 \app\app.component.js
-# sw.file.hash: 6f80df801baaaa62bddc422a2c68714bd2cabbcf
+# sw.file.hash: 0c496e862edd1885fd519000d288a59064a11bce
 \app\app.component.js.map
 # sw.file.hash: 4034272a506e6e15fe69f687a39e0d448d2c2fa0
 \app\category.js
@@ -21,14 +21,22 @@ CACHE MANIFEST
 \app\components\about\about.component.js
 # sw.file.hash: 9db82d8134506649078e5adf70e1a4a31e7d35e9
 \app\components\about\about.component.js.map
-# sw.file.hash: 70d813e86a0022b182b03d959224cedcd3e71c66
+# sw.file.hash: 5716eb53f39a1fd5e338a4ba954fa5f9839018a1
 \app\components\categories\categories.component.css
-# sw.file.hash: fddb4833c30791894daed160d0802c63fdf246be
+# sw.file.hash: be31ed889f9db0e585fb9617312452af1e21eaf4
 \app\components\categories\categories.component.html
-# sw.file.hash: 6fc41f824b2652f7150d9f4234156af63dd472d7
+# sw.file.hash: 0158f284c5f2214d03e1864e6be894c2e9c60498
 \app\components\categories\categories.component.js
-# sw.file.hash: fde7f83e37f4cf85684670cf3f707a12b4538a83
+# sw.file.hash: 17a3d402bac427c3b1bc95d2c2076da88559adad
 \app\components\categories\categories.component.js.map
+# sw.file.hash: 5354fac78ed78274bbe7d5b1b0736fa8a1dfdef8
+\app\components\category-images\category-images.component.css
+# sw.file.hash: 5a9ab2bd84bdccf51a0bbc81719996243b9dc963
+\app\components\category-images\category-images.component.html
+# sw.file.hash: 63ac98e7800559e1b9d604dd7cb8684a0c9cb241
+\app\components\category-images\category-images.component.js
+# sw.file.hash: 9c06c4b073d32e921bbf917830370700eefbb408
+\app\components\category-images\category-images.component.js.map
 # sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
 \app\components\home\home.component.css
 # sw.file.hash: 7731c59fe4a4c46482ad208e5e1428bfeb83b458
@@ -41,18 +49,18 @@ CACHE MANIFEST
 \app\components\image-detail\image-detail.component.css
 # sw.file.hash: c91ebe683b8f7a99a545375dae7b5a07c029e68e
 \app\components\image-detail\image-detail.component.html
-# sw.file.hash: a9955ad4865a58a2a10465093a95c8186202fb0e
+# sw.file.hash: 61c100988e08fe0923a695258d027136042b0f59
 \app\components\image-detail\image-detail.component.js
-# sw.file.hash: 0c0fcb5ae842ae431587f46d008c9ad3fe2358c0
+# sw.file.hash: 034e9b8ec569e243104e5c0556486514560e59c5
 \app\components\image-detail\image-detail.component.js.map
-# sw.file.hash: 5354fac78ed78274bbe7d5b1b0736fa8a1dfdef8
-\app\components\images\images.component.css
-# sw.file.hash: 84c514fb9987324b892a352fbfea7dc81079fa7d
-\app\components\images\images.component.html
-# sw.file.hash: 4f822f4c8242c913be77ab95d509be7f0f7ff3d4
-\app\components\images\images.component.js
-# sw.file.hash: a25445c1f5c68dfd154b7cefc0328f9b724bbd4c
-\app\components\images\images.component.js.map
+# sw.file.hash: 5ac62ce3028ff76887fd10eacbd08e686b76aefb
+\app\components\image-tile\image-tile.component.css
+# sw.file.hash: 18f8fed1702069c11e1789f2b23438d41403e8ad
+\app\components\image-tile\image-tile.component.html
+# sw.file.hash: cd03c4bbc809d6ef1212af0c56e103d4e3c7b5bb
+\app\components\image-tile\image-tile.component.js
+# sw.file.hash: 64bc5ae33a0d90db7aed9802d26c2a474006d671
+\app\components\image-tile\image-tile.component.js.map
 # sw.file.hash: d09ddb772e790ad7db90825cf950871facd27a7f
 \app\environment.js
 # sw.file.hash: afe387357f80e7340e612b59b368292854653569
@@ -65,9 +73,9 @@ CACHE MANIFEST
 \app\private.js
 # sw.file.hash: 6d8176f011f24976023ebcef735f5f653295c567
 \app\private.js.map
-# sw.file.hash: 07f4d7c63caeb722da4ef3fa35bad3847cb283a7
+# sw.file.hash: a3fca685595d130f95df0b079f6f11cc0675f0d5
 \app\services\images.service.js
-# sw.file.hash: e99e4cc0fb2eddd0883235e1cd16de6a0cc684aa
+# sw.file.hash: c6631ef94d3824a3d3663f19aa0829c51d6f66e3
 \app\services\images.service.js.map
 # sw.file.hash: 2fd1de8e1d597efd7f6aaec895a8959520bb632c
 \app\services\mock-images.js
@@ -81,7 +89,7 @@ CACHE MANIFEST
 \assets\main.css
 # sw.file.hash: 84161b857f5c547e3699ddfbffc6d8d737542e01
 \favicon.ico
-# sw.file.hash: 79efe30bad1c632f0181debce23a2a63d590a67e
+# sw.file.hash: 31c7aa662b4da757cec17b4f364178bb9e6f348c
 \index.html
 # sw.file.hash: 9012b63c50f9fcd4a65b4cd729e14a0476ba5439
 \main.js
